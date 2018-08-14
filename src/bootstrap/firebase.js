@@ -2,12 +2,12 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import Vue from 'vue'
 const config = {
-  apiKey: 'AIzaSyBevbEJ6oWm4Ajr1mIdZSLIWCn3jYwtvJE',
-  authDomain: 'raccondb.firebaseapp.com',
-  databaseURL: 'https://raccondb.firebaseio.com',
-  projectId: 'raccondb',
-  storageBucket: 'raccondb.appspot.com',
-  messagingSenderId: '496716434120'
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID
 }
 
 firebase.initializeApp(config)
